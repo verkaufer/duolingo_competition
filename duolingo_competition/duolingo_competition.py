@@ -16,7 +16,7 @@ def getUsers():
 
         return usernames
 
-def getScores():
+def getScores(usernames):
         #Open scores.txt and write scores
         output = open('scores.txt', 'a')
         output.write("\n==============================================")
@@ -27,7 +27,6 @@ def getScores():
                 lingo = duolingo.Duolingo(user)
                 languages = lingo.get_languages()
                 output.write(user+":\n")
-                #output.write("\n".join(languages))
                 for lang in languages:
                         output.write(lang)
                         langDetails = lingo.get_language_details(lang)

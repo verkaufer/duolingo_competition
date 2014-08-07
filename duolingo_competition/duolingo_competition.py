@@ -40,7 +40,7 @@ def getScores():
 
 def main():
         users = getUsers()
-        writeScores = getScores(users)
+        getScores(users)
 
 if __name__ == '__main__':
         main()

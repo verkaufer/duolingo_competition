@@ -32,7 +32,7 @@ def getScores(usernames):
                         output.write(" - [Score: "+str(langDetails['points'])+"]")
                         output.write("\n")
                 output.write("\n\n")
-        output.close
+        output.close()
 
 def main():
         users = getUsers()
